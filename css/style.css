@@ -7,12 +7,21 @@ RESET
 SHARED
 CLEARFIX
 MAIN
+HEADER
+FOOTER
+LOGO
+NAV
+MASTHEAD
+ISLAND
 TYPE
 BUTTONS
+PROMO
 IMAGES
+SPRITES
 TABLES
 CAROUSEL
 FEATURE-LIST
+RESPONSIVE
 MISC
 */
 
@@ -434,7 +443,7 @@ img{
 
 
 /*------------------------------------*\
-	$SPRITE
+	$SPRITES
 \*------------------------------------*/
 /*
 So, as nasty as this looks, it's actually super handy for quickly creating sprited elements and minimising http requests!
