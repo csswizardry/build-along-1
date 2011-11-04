@@ -1,3 +1,3 @@
 # CSS Wizardry build-along
 
-See [csswizardry.com/.../the-css-wizardry-build-along-is-go](http://csswizardry.com/2011/10/the-css-wizardry-build-along-is-go/)
+See [csswizardry.com/.../css-wizardry-build-along-1/](http://csswizardry.com/2011/11/css-wizardry-build-along-1/)
