@@ -477,6 +477,7 @@ table{
     width:100%;
 }
 .panes{
+	margin-left:0;
     list-style:none;
     position:relative;
     width:500%; /* Number of panes * 100% */
