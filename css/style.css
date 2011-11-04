@@ -172,14 +172,22 @@ textarea:focus{
 /*
 Big up @necolas: http://nicolasgallagher.com/micro-clearfix-hack/
 */
+.wrapper:before,
+.wrapper:after,
+nav[role=navigation]:before,
+nav[role=navigation]:after,
 .cf:before,
 .cf:after{
 	content:"";
 	display:table;
 }
+.wrapper:after,
+nav[role=navigation]:after,
 .cf:after{
 	clear:both;
 }
+.wrapper,
+nav[role=navigation],
 .cf{
 	zoom:1;
 }
@@ -276,10 +284,10 @@ html{
 		}
 		
 /*--- SUB-NAV ---*/
-.sub-nav{
+.sub-nav,
+.site-nav span{
 	font-size:14px;
 	font-size:1.166rem;
-	margin-bottom:0;
 }
 
 
@@ -387,6 +395,13 @@ blockquote{
 }
 .source:before{
 	content:"—";
+}
+
+/*--- MISC ---*/
+small{
+	font-style:italic;
+	font-size:11px;
+	font-size:0.916rem;
 }
 
 
@@ -623,8 +638,6 @@ table{
 \*------------------------------------*/
 /* Let's go big! */
 @media(min-width: 481px){
-/*--- GRIDS ---*/
-
 html{
 	max-width:none;
 	padding:0;
@@ -636,6 +649,7 @@ html{
 	margin:0 auto;
 }
 
+/*--- GRIDS ---*/
 .grids{
 	width:auto;
 	max-width:960px;
@@ -686,10 +700,37 @@ Based on @stubbornella’s media object: www.stubbornella.org/content/2010/06/25
 		margin-bottom:0;
 	}
 
-
+/*--- HEADER ---*/
+.header,
+.logo{
+	text-align:left;
+}
+.logo{
+	margin:0 1.5em 0 0;
+	float:left;
+}
+.logo,
+.header .nav{
+	line-height:1;
+	margin-bottom:0;
+}
+nav[role=navigation]{
+	padding-top:12px; /* Dreadful, horrible hard coding. I'm sorry, but I had to! */
+	padding-top:1rem;
+	overflow:hidden;
+}
 .site-nav{
 	text-transform:uppercase;
 }
+	.site-nav a{
+		padding-left:1%;
+		margin-left:4%;
+		border-left:medium double #373737;
+	}
+	.sub-nav a{
+		margin-left:1%;
+		border-left:none;
+	}
 	.site-nav span{
 		display:block;
 	}
@@ -707,6 +748,14 @@ Based on @stubbornella’s media object: www.stubbornella.org/content/2010/06/25
 		min-height:205px;
 		padding-right:150px;
 	}
+/*--- MISC ---*/
+.desktop-accessibility	{ position:absolute; left:-99999px; }
+}
+
+@media(max-width:950px){
+nav[role="navigation"]{
+	clear:both;
+}
 }
 
 
