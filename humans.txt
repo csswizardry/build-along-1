@@ -1,6 +1,7 @@
 TEAM
 
-	Harry Roberts -- Designer/developer -- @csswizardry
+	Levi Flair --    Designer  -- @leviflair
+	Harry Roberts -- Developer -- @csswizardry
 
 
 SITE

@@ -10,6 +10,7 @@ MAIN
 TYPE
 IMAGES
 TABLES
+CAROUSEL
 MISC
 */
 
@@ -154,8 +155,36 @@ Big up @necolas: http://nicolasgallagher.com/micro-clearfix-hack/
 	$MAIN
 \*------------------------------------*/
 html{
+	font:0.75em/1.666 Georgia, serif; /* 12px with 20px baseline. */
+	color:#000;
+	background:url(../img/css/page/bg.png) #efece3;
 	overflow-y:scroll;
 	line-height:1.5; /* A safe and comfortable default for body copy at any size. */
+	max-width:640px;
+	margin:0 auto;
+}
+
+
+
+
+
+/*------------------------------------*\
+	$NAV
+\*------------------------------------*/
+.nav{
+	list-style:none;
+	margin-left:0;
+}
+.nav li{
+	display:inline;
+}
+.nav a{
+	display:inline-block
+}
+
+/*--- SITE-NAV ---*/
+.site-nav span{
+	display:block;
 }
 
 
@@ -260,6 +289,114 @@ img{
 \*------------------------------------*/
 table{
 	width:100%;
+}
+
+
+
+
+
+/*------------------------------------*\
+	$CAROUSEL
+\*------------------------------------*/
+.carousel{
+    overflow:hidden;
+    width:100%;
+}
+.panes{
+    list-style:none;
+    position:relative;
+    width:500%; /* Number of panes * 100% */
+    overflow:hidden; /* This is used solely to clear floats, it does not add functionality. */
+     
+    -moz-animation:carousel 30s infinite;
+    -webkit-animation:carousel 30s infinite;
+	animation:carousel 30s infinite;
+}
+.panes > li{
+    position:relative;
+    float:left;
+    width:20%; /* 100 / number of panes */
+}
+.panes > li > a{
+    display:block;
+}
+.carousel img{
+    display:block;
+	background-color:#000;
+	padding:1%;
+    width:98%;
+    max-width:98%;
+}
+.carousel h2{
+	font-size:1em;
+    padding:0.5em;
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    left:10px;
+    text-align:right;
+    color:#fff;
+    background-color:rgba(0,0,0,0.75);
+}
+
+@-moz-keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
+}
+
+@-webkit-keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
+}
+
+@keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
 }
 
 
