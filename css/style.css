@@ -202,6 +202,17 @@ html{
 
 
 /*------------------------------------*\
+	$FOOTER
+\*------------------------------------*/
+.footer h4{
+	margin-bottom:0;
+}
+
+
+
+
+
+/*------------------------------------*\
 	$LOGO
 \*------------------------------------*/
 .logo{
@@ -273,6 +284,10 @@ html{
 	.island a{
 		color:#fff;
 	}
+	/* Remove margin from the last item in a box to avoide compounded padding+margin spacings. */
+	.island > :last-child{
+		margin-bottom:0;
+	}
 
 
 
@@ -292,12 +307,12 @@ h2,.beta{
 	font-size:2.5rem;
 }
 h3,.gamma{
-	font-size:Xpx;
-	font-size:Xrem;
+	font-size:20px;
+	font-size:1.666rem;
 }
 h4,.delta{
-	font-size:Xpx;
-	font-size:Xrem;
+	font-size:16px;
+	font-size:1.333rem;
 }
 h5,.epsilon{
 	font-size:Xpx;
@@ -570,6 +585,9 @@ table{
 }
 	.feature-list h2{
 		margin-bottom:0;
+	}
+	.feature-list a{
+		border-bottom:2px solid #767570;
 	}
 
 
