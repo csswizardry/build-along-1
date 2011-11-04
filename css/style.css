@@ -105,10 +105,14 @@ form,
 pre,
 hr,
 .header,
-.logo,
 .source{
 	margin-bottom:40px;
 	margin-bottom:3.333rem;
+}
+.logo,
+.site-nav,
+.footer p{
+	margin-bottom:1.5em;
 }
 
 /* Shared font */
@@ -120,7 +124,9 @@ h1,h2,h3{
 	text-shadow:1px 1px 0 #fff,2px 2px 0 #000;
 }
 h4,h5,h6,
+dt,
 .site-nav,
+.sub-nav,
 .tagline,
 .btn{
 	font-family:franklin-gothic-urw , "Franklin Gothic Book", sans-serif;
@@ -248,11 +254,9 @@ html{
 .site-nav{
 	font-size:16px;
 	font-size:1.333rem;
-	line-height:1;
+	line-height:2;
 }
 	.site-nav span{
-		font-size:12px;
-		font-size:1rem;
 		color:#858283;
 	}
 	.site-nav a:hover{
@@ -268,6 +272,14 @@ html{
 	font-size:1.166rem;
 	margin-bottom:0;
 }
+
+
+
+
+
+/*------------------------------------*\
+	$MASTHEAD
+\*------------------------------------*/
 
 
 
@@ -498,8 +510,9 @@ table{
 .carousel img{
     display:block;
 	background-color:#000;
-    width:100%;
-    max-width:100%;
+	padding:1%;
+    width:98%;
+    max-width:98%;
 }
 .carousel h2{
 	font-size:1em;
@@ -588,6 +601,7 @@ table{
 		margin-bottom:0;
 	}
 	.feature-list a{
+		color:inherit;
 		border-bottom:2px solid #767570;
 	}
 
@@ -606,6 +620,20 @@ table{
 	.site-nav span{
 		display:block;
 	}
+.masthead{
+	background-position:right top;
+	background-repeat:no-repeat;
+	/* These next three should stop the text overlapping the background image on a phone. *
+	-moz-hyphens:auto;
+	-webkit-hyphens:auto;
+	hyphens:auto;
+}
+	.page-home .masthead{
+		background-image:url(../img/css/masthead/drop.png);
+		/* Unfortunately these next two numbers need to be hard-coded based on the image you want to use. *
+		min-height:205px;
+		padding-right:150px;
+	}
 }*/
 
 
@@ -615,4 +643,8 @@ table{
 /*------------------------------------*\
 	$MISC
 \*------------------------------------*/
-.accessibility{ position:absolute; left:-99999px; }
+/*
+Some nasty horrible classes to make your life easier ;)
+*/
+.text-center	{ text-align:center; }
+.accessibility	{ position:absolute; left:-99999px; }
