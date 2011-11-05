@@ -170,7 +170,7 @@ textarea:focus{
 	$CLEARFIX
 \*------------------------------------*/
 /*
-Big up @necolas: http://nicolasgallagher.com/micro-clearfix-hack/
+Big up @necolas: nicolasgallagher.com/micro-clearfix-hack/
 */
 .wrapper:before,
 .wrapper:after,
@@ -252,6 +252,9 @@ html{
 /*------------------------------------*\
 	$NAV
 \*------------------------------------*/
+/*
+The nav abstraction: csswizardry.com/2011/09/the-nav-abstraction/
+*/
 .nav{
 	list-style:none;
 	margin-left:0;
@@ -305,6 +308,9 @@ html{
 /*------------------------------------*\
 	$ISLAND
 \*------------------------------------*/
+/*
+The island object: csswizardry.com/2011/10/the-island-object/
+*/
 .island{
 	padding:1em;
 	background-color:#000;
@@ -369,7 +375,7 @@ li > ol{
 
 /*--- QUOTES ---*/
 /*
-Big up @boblet: http://html5doctor.com/blockquote-q-cite/
+Big up @boblet: html5doctor.com/blockquote-q-cite/
 */
 q{ quotes:"‘" "’" "“" "”"; }
 
@@ -508,6 +514,9 @@ table{
 /*------------------------------------*\
 	$CAROUSEL
 \*------------------------------------*/
+/*
+Fluid carousel: csswizardry.com/2011/10/fully-fluid-responsive-css-carousel/
+*/
 .carousel{
     overflow:hidden;
     width:100%;
@@ -651,7 +660,7 @@ html{
 
 /*--- GRIDS ---*/
 /*
-Created with http://csswizardry.com/fluid-grids/
+Created with csswizardry.com/fluid-grids/
 */
 .grids{
 	width:auto;
