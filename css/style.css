@@ -263,9 +263,9 @@ html{
 		display:inline-block;
 		margin-left:5%;
 	}
-		.nav li:first-child a{
-			margin-left:0;
-		}
+	.nav li:first-child a{
+		margin-left:0;
+	}
 
 /*--- SITE-NAV ---*/
 .site-nav{
@@ -313,7 +313,7 @@ html{
 	.island a{
 		color:#fff;
 	}
-	/* Remove margin from the last item in a box to avoide compounded padding+margin spacings. */
+	/* Remove margin from the last item in a box to avoid compounded padding+margin spacings. */
 	.island > :last-child{
 		margin-bottom:0;
 	}
@@ -390,8 +390,8 @@ blockquote{
 .source{
 	display:block;
 	text-indent:0;
-	margin-top:-Xpx;
-	margin-top:-Xrem;
+	margin-top:-40px;
+	margin-top:-3.333rem;
 }
 .source:before{
 	content:"—";
@@ -650,6 +650,9 @@ html{
 }
 
 /*--- GRIDS ---*/
+/*
+Created with http://csswizardry.com/fluid-grids/
+*/
 .grids{
 	width:auto;
 	max-width:960px;
@@ -737,10 +740,6 @@ nav[role=navigation]{
 .masthead{
 	background-position:right top;
 	background-repeat:no-repeat;
-	/* These next three should stop the text overlapping the background image on a phone. */
-	-moz-hyphens:auto;
-	-webkit-hyphens:auto;
-	hyphens:auto;
 }
 	.page-home .masthead{
 		background-image:url(../img/css/masthead/drop.png);
@@ -748,6 +747,7 @@ nav[role=navigation]{
 		min-height:205px;
 		padding-right:150px;
 	}
+
 /*--- MISC ---*/
 .desktop-accessibility	{ position:absolute; left:-99999px; }
 }
