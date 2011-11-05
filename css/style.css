@@ -543,6 +543,7 @@ Fluid carousel: csswizardry.com/2011/10/fully-fluid-responsive-css-carousel/
 .carousel img{
     display:block;
 	background-color:#000;
+	/* Borders on responsive images: csswizardry.com/2011/07/borders-on-responsive-images/ */
 	padding:1%;
     width:98%;
     max-width:98%;
